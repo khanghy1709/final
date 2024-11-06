@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="website icon" type="png" href="img/spotify-client-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+              <span>Search</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+              <span>Your Library</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+              <span>Create Playlist</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-heart"></span>
+              <span>Liked Songs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="policies">
+        <ul>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+          <span class="fa fa-search btnSearch" style="color: white;"></span>
+          <input type="text" class="Search"/>
+        </div>
+<!-- NavBar -->
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="#">Premium</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+            <li class="divider">|</li>
+            <!-- <li>
+              <a href="#">Sign Up</a>
+            </li> -->
+          </ul>
+           <div class="wrapperAccount" >
+             <!-- Không có tài khoản -->
+             <!-- <button type="button" style="background-color:black;color:white">Sign Up</button>
+             <button type="button">Log In</button> -->
+
+             <!-- Có tài khoản -->
+              <div class="wrapperControl">
+                <i style="color:white" class="fa-solid fa-user"></i>
+                <p style="color:white" >diplamtuan@gmail.com</p>
+                <ul>
+                  <li> <i class="fa-regular fa-user"></i> Profile</li>
+                  <li> sign out <i class="fa-solid fa-right-from-bracket"></i></li>
+                </ul>
+              </div>
+           </div>
+
+        </div>
+      </div>
+<!-- Content -->
+ <div class="container123">   
+  <!-- <div class="spotify-playlists" style="margin-top:74px;">
+    <h2>Spotify Playlists</h2>
+
+    <div class="list">
+      <div class="item">
+        <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+        <div class="play">
+          <span class="fa fa-play"></span>
+        </div>
+        <h4>Today's Top Hits</h4>
+        <p>Rema & Selena Gomez are on top of the...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="spotify-playlists">
+    <h2>Focus</h2>
+    <div class="list">
+      <div class="item">
+        <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+        <div class="play">
+          <span class="fa fa-play"></span>
+        </div>
+        <h4>Peaceful Piano</h4>
+        <p>Relax and indulge with beautiful piano pieces</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="spotify-playlists">
+    <h2>Mood</h2>
+    <div class="list">
+      <div class="item">
+        <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+        <div class="play">
+          <span class="fa fa-play"></span>
+        </div>
+        <h4>Mood Booster</h4>
+        <p>Get happy with today's dose of feel-good...</p>
+      </div>
+    </div>
+    <hr>
+  </div> -->
+</div>
+   
+<!-- footer -->
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">our Team</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script  type="module" src="index123.js"></script>
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
